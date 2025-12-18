@@ -1,0 +1,183 @@
+.welcome {
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  padding: 2rem;
+}
+
+.welcome-section {
+  max-width: 100%;
+}
+
+.welcome-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.welcome-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+  font-family: 'Inter', sans-serif;
+}
+
+.welcome-logo-small {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.logo-sun-small {
+  position: relative;
+  width: 60px;
+  height: 30px;
+}
+
+.sun-circle-small {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25px;
+  height: 25px;
+  background: var(--gold);
+  border-radius: 50%;
+}
+
+.logo-text-small {
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.welcome-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.welcome-text {
+  color: var(--gray-700);
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.facebook-button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1.5rem;
+  background: var(--primary-blue);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-md);
+}
+
+.facebook-button:hover {
+  background: #1e40af;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.facebook-icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.help-banner {
+  flex: 1;
+  min-width: 250px;
+  background: linear-gradient(135deg, var(--orange) 0%, #ea580c 100%);
+  color: var(--white);
+  padding: 1.25rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+}
+
+.help-banner-header {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em;
+}
+
+.help-banner-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.help-banner-text {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  opacity: 0.95;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  background: var(--gray-100);
+  border-radius: 8px;
+}
+
+.social-link {
+  color: var(--primary-blue);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: var(--gold);
+  text-decoration: underline;
+}
+
+.help-text {
+  color: var(--gray-700);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .welcome {
+    padding: 1.5rem;
+  }
+  
+  .welcome-title {
+    font-size: 1.5rem;
+  }
+  
+  .welcome-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .social-buttons {
+    flex-direction: column;
+  }
+  
+  .help-banner {
+    min-width: 100%;
+  }
+}
+

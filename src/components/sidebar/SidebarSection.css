@@ -1,0 +1,120 @@
+.sidebar-section {
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sidebar-section:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.sidebar-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+  border-bottom: 3px solid var(--gold);
+  padding-bottom: 0.5rem;
+}
+
+.sidebar-text {
+  color: var(--gray-700);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.sidebar-text.highlight {
+  background: linear-gradient(120deg, rgba(245, 158, 11, 0.1) 0%, rgba(245, 158, 11, 0.05) 100%);
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--gold);
+  font-weight: 500;
+}
+
+.sidebar-link {
+  display: inline-block;
+  color: var(--primary-blue);
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.sidebar-link:hover {
+  color: var(--gold);
+  text-decoration: underline;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-name {
+  font-weight: 600;
+  color: var(--gray-900);
+  font-size: 1rem;
+}
+
+.contact-address {
+  color: var(--gray-700);
+  line-height: 1.6;
+}
+
+.contact-phone,
+.contact-email {
+  color: var(--gray-700);
+}
+
+.contact-phone a,
+.contact-email a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-phone a:hover,
+.contact-email a:hover {
+  color: var(--gold);
+  text-decoration: underline;
+}
+
+.donate-section {
+  background: linear-gradient(135deg, rgba(30, 58, 138, 0.05) 0%, rgba(245, 158, 11, 0.05) 100%);
+}
+
+.wishlist-items {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.wishlist-item {
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background: var(--gray-100);
+  border-radius: 6px;
+  color: var(--gray-800);
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.wishlist-item:hover {
+  background: var(--gray-200);
+  border-left-color: var(--gold);
+  transform: translateX(4px);
+}
+
+.wishlist-item::before {
+  content: '✓';
+  color: var(--gold);
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+

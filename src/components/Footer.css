@@ -1,0 +1,42 @@
+.footer {
+  background: var(--white);
+  border-top: 3px solid var(--gold);
+  padding: 2rem;
+  margin-top: 3rem;
+  box-shadow: 0 -4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-line {
+  color: var(--gray-700);
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-line a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-line a:hover {
+  color: var(--gold);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 1rem;
+  }
+  
+  .footer-line {
+    font-size: 0.85rem;
+  }
+}
+
