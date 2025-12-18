@@ -3,6 +3,8 @@
   box-shadow: var(--shadow-md);
   padding: 2rem;
   margin-bottom: 2rem;
+  position: relative;
+  z-index: 100;
 }
 
 .header-top {

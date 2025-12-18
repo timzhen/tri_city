@@ -100,9 +100,14 @@ const MediaAndNews = () => {
 
   return (
     <main className="media-and-news">
+      <div className="hero-background"></div>
+      <section className="hero-section">
+        <div className="hero-content">
+          <h2 className="media-and-news-title hero-title-style" data-aos="fade-down">Media and News</h2>
+        </div>
+      </section>
+
       <section className="media-and-news-section">
-        <h2 className="media-and-news-title" data-aos="fade-down">Media and News</h2>
-        
         <div className="media-content">
           <div className="media-subsection" data-aos="fade-up" data-aos-delay="100">
             <h3 className="subsection-title">Featured in the Media</h3>

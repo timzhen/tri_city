@@ -24,12 +24,17 @@ const AboutUs = () => {
 
   return (
     <main className="about-us">
+      <div className="hero-background"></div>
+      <section className="hero-section">
+        <div className="hero-content">
+          <h2 className="about-us-title hero-title-style" data-aos="fade-down">About Us</h2>
+          <p className="about-us-intro hero-intro-style" data-aos="fade-up" data-aos-delay="100">
+            Our community's work has been supported and recognized by local organizations and partners, reflecting the trust and care we bring to serving our neighbors.
+          </p>
+        </div>
+      </section>
+
       <section className="about-us-section">
-        <h2 className="about-us-title" data-aos="fade-down">About Us</h2>
-        <p className="about-us-intro" data-aos="fade-up" data-aos-delay="100">
-          Our community's work has been supported and recognized by local organizations and partners, reflecting the trust and care we bring to serving our neighbors.
-        </p>
-        
         <div className="about-content">
           <div className="about-subsection" data-aos="fade-up" data-aos-delay="100">
             <h3 className="subsection-title">Our Purpose</h3>
@@ -66,34 +71,6 @@ const AboutUs = () => {
           </div>
 
           <div className="about-subsection" data-aos="fade-up" data-aos-delay="400">
-            <h3 className="subsection-title">Facebook</h3>
-            <div className="facebook-section" data-aos="fade-left" data-aos-delay="500">
-              <a 
-                href="http://bit.ly/tcfbpFB" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="facebook-button-large"
-              >
-                <svg className="facebook-icon-large" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                </svg>
-                <span>Like us on Facebook</span>
-              </a>
-              <p className="facebook-text">
-                Like us on Facebook and tell others to Like us too!
-              </p>
-              <a 
-                href="http://bit.ly/tcfbpFB" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="facebook-link"
-              >
-                http://bit.ly/tcfbpFB
-              </a>
-            </div>
-          </div>
-
-          <div className="about-subsection" data-aos="fade-up" data-aos-delay="600">
             <h3 className="subsection-title">History</h3>
             <p className="about-text">
               The Tri-City Free Breakfast Program began in May 1997 with 12 guests. Since then, the program has grown significantly, now serving almost 200 guests on many mornings. Over the years, the program has made a substantial impact in the community.
