@@ -3,7 +3,6 @@ import Header from './components/Header'
 import Welcome from './components/Welcome'
 import AboutUs from './components/AboutUs'
 import MediaAndNews from './components/MediaAndNews'
-import BottomSections from './components/BottomSections'
 import Footer from './components/Footer'
 import './App.css'
 
@@ -18,7 +17,7 @@ function App() {
         return <MediaAndNews />
       case 'welcome':
       default:
-        return <Welcome />
+        return <Welcome setCurrentPage={setCurrentPage} />
     }
   }
 
@@ -29,7 +28,6 @@ function App() {
         <div className="content-wrapper">
           {renderMainContent()}
         </div>
-        {currentPage === 'welcome' && <BottomSections />}
       </div>
       <Footer />
     </div>
