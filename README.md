@@ -82,3 +82,5 @@ src/
 - Subtle animations and shadows for depth
 - Better accessibility with semantic HTML
 
+
+
