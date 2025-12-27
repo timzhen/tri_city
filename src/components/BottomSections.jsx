@@ -25,3 +25,5 @@ const BottomSections = () => {
 
 export default BottomSections
 
+
+

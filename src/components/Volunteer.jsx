@@ -6,10 +6,10 @@ import './Volunteer.css'
 const Volunteer = () => {
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 500,
       easing: 'ease-in-out',
       once: true,
-      offset: 100,
+      offset: 75,
     })
   }, [])
 
@@ -41,7 +41,7 @@ const Volunteer = () => {
       <section className="hero-section">
         <div className="hero-content">
           <h2 className="volunteer-title hero-title-style" data-aos="fade-down">Volunteer Information</h2>
-          <p className="volunteer-intro hero-intro-style" data-aos="fade-up" data-aos-delay="100">
+          <p className="volunteer-intro hero-intro-style" data-aos="fade-up" data-aos-delay="75">
             The Tri-City Free Breakfast Program could not exist without our wonderful volunteers.
           </p>
         </div>
@@ -49,8 +49,15 @@ const Volunteer = () => {
 
       <section className="volunteer-section">
         <div className="volunteer-content">
-          <div className="volunteer-subsection" data-aos="fade-up" data-aos-delay="100">
+          <div className="volunteer-subsection" data-aos="fade-up" data-aos-delay="75">
             <h3 className="subsection-title">Our Volunteers</h3>
+            <div className="volunteer-image-container" data-aos="fade-up" data-aos-delay="150">
+              <img 
+                src="/images/volunteer-peanut-butter-drive.jpg" 
+                alt="Volunteers at Peanut Butter Drive event for Tri-City Free Breakfast Program" 
+                className="volunteer-image"
+              />
+            </div>
             <p className="volunteer-text">
               The Tri-City Free Breakfast Program could not exist without our wonderful volunteers. We have volunteers of all ages, from teens earning community service hours to retirees in their 80's.
             </p>
@@ -65,12 +72,12 @@ const Volunteer = () => {
             </p>
           </div>
 
-          <div className="volunteer-subsection" data-aos="fade-up" data-aos-delay="200">
+          <div className="volunteer-subsection" data-aos="fade-up" data-aos-delay="150">
             <h3 className="subsection-title">Volunteer Hours</h3>
             <p className="volunteer-text">
               Thank you to the dozens of people who come in each week and make the program possible!
             </p>
-            <div className="table-container" data-aos="zoom-in" data-aos-delay="300">
+            <div className="table-container" data-aos="zoom-in" data-aos-delay="225">
               <table className="data-table">
                 <thead>
                   <tr>
@@ -80,7 +87,7 @@ const Volunteer = () => {
                 </thead>
                 <tbody>
                   {volunteerHours.map((row, index) => (
-                    <tr key={row.year} data-aos="fade-right" data-aos-delay={400 + (index * 50)}>
+                    <tr key={row.year}>
                       <td>{row.year}</td>
                       <td>{row.hours.toLocaleString()}</td>
                     </tr>
@@ -90,14 +97,14 @@ const Volunteer = () => {
             </div>
           </div>
 
-          <div className="volunteer-subsection" data-aos="fade-up" data-aos-delay="400">
+          <div className="volunteer-subsection" data-aos="fade-up" data-aos-delay="300">
             <h3 className="subsection-title">Join Our Team</h3>
             <p className="volunteer-text">
               We serve breakfast to low income individuals and their families, and we are always looking for well rounded individuals with a great attitude. The Tri-City Free Breakfast Program provides a restaurant quality type service so each individual has that extra attention that so many of them deserve. It is our goal to make them feel at home at all times.
             </p>
           </div>
 
-          <div className="volunteer-subsection" data-aos="fade-up" data-aos-delay="500">
+          <div className="volunteer-subsection" data-aos="fade-up" data-aos-delay="300">
             <h3 className="subsection-title">Volunteer Roles</h3>
             <ul className="volunteer-roles-list">
               {volunteerRoles.map((role, index) => (
@@ -108,7 +115,7 @@ const Volunteer = () => {
             </ul>
           </div>
 
-          <div className="volunteer-subsection contact-subsection" data-aos="fade-up" data-aos-delay="700">
+          <div className="volunteer-subsection" data-aos="fade-up" data-aos-delay="300">
             <h3 className="subsection-title">Contact Us to Volunteer</h3>
             <p className="volunteer-text">
               If you would like to volunteer, contact Rich Doberstein:

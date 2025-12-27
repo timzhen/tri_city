@@ -69,6 +69,10 @@ const Welcome = ({ setCurrentPage }) => {
                   <span className="contact-label">Email:</span>{' '}
                   <a href="mailto:tricityfbp@gmail.com" className="contact-link">tricityfbp@gmail.com</a>
                 </p>
+                <p className="contact-item">
+                  <span className="contact-label">Location:</span>{' '}
+                  <a href="https://irvingtonpres.org/" target="_blank" rel="noopener noreferrer" className="contact-link">Irvington Presbyterian Church</a>
+                </p>
               </div>
             </div>
           </div>

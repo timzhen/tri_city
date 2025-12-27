@@ -6,10 +6,10 @@ import './AboutUs.css'
 const AboutUs = () => {
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 500,
       easing: 'ease-in-out',
       once: true,
-      offset: 100,
+      offset: 75,
     })
   }, [])
 
@@ -28,7 +28,7 @@ const AboutUs = () => {
       <section className="hero-section">
         <div className="hero-content">
           <h2 className="about-us-title hero-title-style" data-aos="fade-down">About Us</h2>
-          <p className="about-us-intro hero-intro-style" data-aos="fade-up" data-aos-delay="100">
+          <p className="about-us-intro hero-intro-style" data-aos="fade-up" data-aos-delay="75">
             Our community's work has been supported and recognized by local organizations and partners, reflecting the trust and care we bring to serving our neighbors.
           </p>
         </div>
@@ -36,7 +36,7 @@ const AboutUs = () => {
 
       <section className="about-us-section">
         <div className="about-content">
-          <div className="about-subsection" data-aos="fade-up" data-aos-delay="100">
+          <div className="about-subsection" data-aos="fade-up" data-aos-delay="75">
             <h3 className="subsection-title">Our Purpose</h3>
             <p className="about-text">
               The Tri-City Free Breakfast program (TCFBP) continues to offer a hot, nutritious breakfast with dignity and respect every Monday, Wednesday, and Friday from 7:00 to 9:00 a.m. This means no questions asked why you need the meal, no sermons preached to get a meal, no soup kitchen line. Instead, you get served with dignity at a table by volunteer servers, with real table service, and hot food, all prepared by friendly volunteers.
@@ -46,9 +46,9 @@ const AboutUs = () => {
             </p>
           </div>
 
-          <div className="about-subsection" data-aos="fade-up" data-aos-delay="200">
+          <div className="about-subsection" data-aos="fade-up" data-aos-delay="150">
             <h3 className="subsection-title">TCFBP Guests Served Meals Served</h3>
-            <div className="table-container" data-aos="zoom-in" data-aos-delay="300">
+            <div className="table-container" data-aos="zoom-in" data-aos-delay="225">
               <table className="data-table">
                 <thead>
                   <tr>
@@ -59,7 +59,7 @@ const AboutUs = () => {
                 </thead>
                 <tbody>
                   {tableData.map((row, index) => (
-                    <tr key={row.year} data-aos="fade-right" data-aos-delay={400 + (index * 50)}>
+                    <tr key={row.year}>
                       <td>{row.year}</td>
                       <td>{row.guests.toLocaleString()}</td>
                       <td>{row.meals.toLocaleString()}</td>
@@ -70,7 +70,7 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <div className="about-subsection" data-aos="fade-up" data-aos-delay="400">
+          <div className="about-subsection" data-aos="fade-up" data-aos-delay="300">
             <h3 className="subsection-title">History</h3>
             <p className="about-text">
               The Tri-City Free Breakfast Program began in May 1997 with 12 guests. Since then, the program has grown significantly, now serving almost 200 guests on many mornings. Over the years, the program has made a substantial impact in the community.

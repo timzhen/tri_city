@@ -6,10 +6,10 @@ import './MediaAndNews.css'
 const MediaAndNews = () => {
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 500,
       easing: 'ease-in-out',
       once: true,
-      offset: 100,
+      offset: 75,
     })
   }, [])
 
@@ -109,11 +109,11 @@ const MediaAndNews = () => {
 
       <section className="media-and-news-section">
         <div className="media-content">
-          <div className="media-subsection" data-aos="fade-up" data-aos-delay="100">
+          <div className="media-subsection" data-aos="fade-up" data-aos-delay="75">
             <h3 className="subsection-title">Featured in the Media</h3>
             <div className="media-list">
               {mediaFeatures.map((yearGroup, yearIndex) => (
-                <div key={yearGroup.year} className="media-year-group" data-aos="fade-up" data-aos-delay={200 + (yearIndex * 100)}>
+                <div key={yearGroup.year} className="media-year-group" data-aos="fade-up" data-aos-delay={75 + (yearIndex * 75)}>
                   <h4 className="media-year">{yearGroup.year}</h4>
                   {yearGroup.items.map((item, itemIndex) => (
                     <div key={itemIndex} className="media-item">
@@ -143,11 +143,11 @@ const MediaAndNews = () => {
             </div>
           </div>
 
-          <div className="media-subsection" data-aos="fade-up" data-aos-delay="600">
+          <div className="media-subsection" data-aos="fade-up" data-aos-delay="150">
             <h3 className="subsection-title">Tri-City Free Breakfast Program Newsletter</h3>
-            <ul className="newsletter-list">
+            <ul className="newsletter-list" data-aos="fade-up" data-aos-delay="225">
               {newsletters.map((newsletter, index) => (
-                <li key={index} data-aos="fade-left" data-aos-delay={700 + (index * 50)}>
+                <li key={index}>
                   <a 
                     href={newsletter.url} 
                     target="_blank" 
@@ -161,11 +161,11 @@ const MediaAndNews = () => {
             </ul>
           </div>
 
-          <div className="media-subsection" data-aos="fade-up" data-aos-delay="900">
+          <div className="media-subsection" data-aos="fade-up" data-aos-delay="300">
             <h3 className="subsection-title">Tri-City Free Breakfast Program Listings</h3>
-            <ul className="listings-list">
+            <ul className="listings-list" data-aos="fade-up" data-aos-delay="375">
               {listings.map((listing, index) => (
-                <li key={index} data-aos="fade-right" data-aos-delay={1000 + (index * 50)}>
+                <li key={index}>
                   <a 
                     href={listing.url} 
                     target="_blank" 

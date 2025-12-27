@@ -3,7 +3,7 @@
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: var(--shadow-md);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .sidebar-section:hover {
@@ -42,7 +42,7 @@
   text-decoration: none;
   font-weight: 600;
   margin-top: 0.5rem;
-  transition: color 0.3s ease;
+  transition: color 0.15s ease;
 }
 
 .sidebar-link:hover {
@@ -76,7 +76,7 @@
 .contact-email a {
   color: var(--primary-blue);
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.15s ease;
 }
 
 .contact-phone a:hover,
@@ -101,7 +101,7 @@
   background: var(--gray-100);
   border-radius: 6px;
   color: var(--gray-800);
-  transition: all 0.3s ease;
+  transition: all 0.15s ease;
   border-left: 3px solid transparent;
 }
 
@@ -117,4 +117,6 @@
   font-weight: bold;
   margin-right: 0.5rem;
 }
+
+
 

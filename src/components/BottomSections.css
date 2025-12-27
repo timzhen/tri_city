@@ -10,7 +10,7 @@
   padding: 2rem;
   border-radius: 12px;
   box-shadow: var(--shadow-md);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .bottom-section:hover {
@@ -43,7 +43,7 @@
   text-decoration: none;
   border-radius: 8px;
   font-weight: 600;
-  transition: all 0.3s ease;
+  transition: all 0.15s ease;
   box-shadow: var(--shadow-sm);
 }
 
@@ -67,4 +67,6 @@
     font-size: 1.5rem;
   }
 }
+
+
 
