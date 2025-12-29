@@ -18,6 +18,19 @@
 
 .logo {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-image {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-text {
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -92,6 +105,10 @@
   
   .logo {
     width: 100%;
+  }
+  
+  .logo-image {
+    height: 40px;
   }
   
   .navigation {
